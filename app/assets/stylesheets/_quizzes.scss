@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c';
 }
 
 body {
@@ -15,7 +16,6 @@ header {
     color: rgba(0, 221, 255, 0.413);
     font-size: 50px;
     font-weight: bold;
-    font-family: cursive;
     text-shadow: 1px 2px 3px #808080;
     line-height: 90px;
     padding-left: 120px;
@@ -68,7 +68,6 @@ header {
   .contents {
     color: white;
     font-size: 50px;
-    font-family: 'M PLUS Rounded 1c';
     opacity: 0.7;
     float: left;
     .ノンジャンル {
@@ -103,7 +102,6 @@ header {
 
 .new_quiz {
     font-size: 30px;
-    font-family: 'M PLUS Rounded 1c';
   .form {
     display: block;
     border-radius: 5px;
@@ -135,7 +133,6 @@ button {
   background-color: white;
   width: 700px;
   font-size: 40px;
-  font-family: 'M PLUS Rounded 1c';
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
@@ -191,7 +188,6 @@ table {
   height: 200px;
   color: white;
   font-size: 40px;
-  font-family: 'M PLUS Rounded 1c';
   margin: 450px 0 0 750px;
   position: absolute;
   border: solid 5px white;
@@ -269,14 +265,12 @@ table {
 .new_user {
   color: white;
   font-size: 40px;
-  font-family: 'M PLUS Rounded 1c';
   opacity: 0.8;
 }
 
 .userPets {
   color: white;
   font-size: 40px;
-  font-family: 'M PLUS Rounded 1c';
   opacity: 0.7;
 }
 
@@ -284,7 +278,6 @@ table {
   display: flex;
   .postDate {
   color: white;
-  font-family: 'M PLUS Rounded 1c';
   opacity: 0.7;
   }
 }
