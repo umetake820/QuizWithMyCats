@@ -1,16 +1,17 @@
-.userPets
-  = @nickname + "さんの投稿画像一覧"
-.petsList
-  - @images.each do |image|
-    .petsPhoto
-      = image_tag image.photo.url, size: "200x200", alt: "pets"
-      .postDate
-        = image.created_at
-.petsNew
-  = form_for @image do |f|
-    .input
-      = f.label :image, class: 'input__image' do
-        画像を投稿する→
-        = icon('fa', 'image')
-        = f.file_field :photo, class: 'input__image__file'
-    = f.submit 'Send', class: 'submit-btn'
+.userPage
+  .userPets
+    = @nickname + "さんの投稿画像一覧"
+  .petsList
+    - @images.each do |image|
+      .petsPhoto
+        = image_tag image.photo.url, size: "200x200", alt: "pets"
+        .postDate
+          = image.created_at
+  .petsNew
+    = form_for @image do |f|
+      .input
+        画像を選択する→
+        = f.label :photo, class: 'input__image' do
+          = icon('fa', 'image')
+          = f.file_field :photo, class: 'input__image__file'
+          = f.submit '送信', class: 'submit-btn'

@@ -84,7 +84,7 @@ $(function() {
       setTimeout(function() {
         $("button").prop("disabled", false).css({"border": "", "text-indent": ""});
         quiz();
-      }, 500);
+      }, 1000);
     } else {
       setTimeout(function() {
         $(".quizTitle").html("終了!!");
@@ -110,7 +110,7 @@ $(function() {
           $(".replay").click(function() {
             location.reload();
           });
-        }, 1000);
+        }, 2000);
       }, 1000);
     };
   };
